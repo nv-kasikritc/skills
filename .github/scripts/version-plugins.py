@@ -405,7 +405,7 @@ class ChangeKind:
 class PluginAnalysis:
     name: str
     yaml_path: Path
-    base_version: SemVer
+    base_version: SemVer | None
     head_version: SemVer
     builder_changed_version: bool
     change_kind: str
@@ -542,7 +542,7 @@ def analyze_plugin(
 
     if base_plugin_yaml is None:
         base_spec = None
-        base_version = head_version  # placeholder; classify_change handles None spec
+        base_version = None  # a new plugin has no previous release to compare
         builder_changed_version = True  # everything is new
     else:
         base_spec = _merged_spec(base_defaults, base_plugin_yaml)
@@ -617,6 +617,11 @@ def decide(analysis: PluginAnalysis) -> tuple[str, str | None]:
       accept  -> builder already changed version; validated OK.
       fail    -> validation failure; payload is the message.
     """
+    # analyze_plugin already parsed the initial version as SemVer. A new
+    # plugin has no base version, so monotonic release checks do not apply.
+    if analysis.base_version is None:
+        return "accept", None
+
     if analysis.builder_changed_version:
         findings = validate_builder_version(
             analysis.base_version, analysis.head_version
