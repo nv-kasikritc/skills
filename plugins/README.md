@@ -6,6 +6,7 @@ definition in [`plugins.d/`](../plugins.d/) by
 
 A plugin folder typically contains:
 
+- `plugin.json` — portable [Agent Plugins 1.0.0](https://agent-plugins.org/) manifest
 - `.claude-plugin/plugin.json` — Claude plugin manifest
 - `.codex-plugin/plugin.json` — Codex plugin manifest
 - `.cursor-plugin/plugin.json` — Cursor plugin manifest
@@ -26,6 +27,14 @@ plugin's metadata or skill list, edit `plugins.d/<name>.yml` and re-run:
 
 See [`plugins.d/README.md`](../plugins.d/README.md) for the full
 authoring workflow.
+
+## Sample plugin
+
+[`nvidia-skills-sample/`](./nvidia-skills-sample/) is an annotated example of a
+self-contained Agent Plugins 1.0.0 package. It bundles the existing NVIDIA
+Skill Finder, includes build and schema validation instructions, and stays
+out of the marketplace listings. Its source definition is
+[`plugins.d/nvidia-skills-sample.yml`](../plugins.d/nvidia-skills-sample.yml).
 
 ## Curated plugins
 

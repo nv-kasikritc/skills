@@ -1,0 +1,35 @@
+{
+    "name": "nvidia-skills-sample",
+    "version": "0.1.0",
+    "description": "Sample Agent Plugins package that helps users discover the right NVIDIA skill for their workflow.",
+    "author": {
+        "name": "nv-kasikritc",
+        "url": "https://github.com/nv-kasikritc"
+    },
+    "homepage": "https://github.com/nv-kasikritc/skills",
+    "repository": "https://github.com/nv-kasikritc/skills",
+    "license": "Apache-2.0 AND CC-BY-4.0",
+    "keywords": [
+        "nvidia",
+        "agent-plugins",
+        "sample",
+        "skill-discovery"
+    ],
+    "skills": "./skills/",
+    "interface": {
+        "displayName": "NVIDIA Skills Sample",
+        "shortDescription": "Discover NVIDIA skills with a portable sample plugin",
+        "longDescription": "A sample Agent Plugins 1.0.0 package bundling NVIDIA Skill Finder. Ask about an NVIDIA workflow to get a matching skill, an install command, and a first prompt.",
+        "developerName": "nv-kasikritc",
+        "category": "Developer Tools",
+        "capabilities": [
+            "Interactive",
+            "Write"
+        ],
+        "brandColor": "#76b900",
+        "defaultPrompt": [
+            "Which NVIDIA skills can help with simulation and robotics?",
+            "Find an NVIDIA skill for GPU-accelerated data processing."
+        ]
+    }
+}
