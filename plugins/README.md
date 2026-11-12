@@ -30,11 +30,12 @@ authoring workflow.
 
 ## Sample plugin
 
-[`nvidia-skills-sample/`](./nvidia-skills-sample/) is an annotated example of a
-self-contained Agent Plugins 1.0.0 package. It bundles the existing NVIDIA
-Skill Finder, includes build and schema validation instructions, and stays
-out of the marketplace listings. Its source definition is
-[`plugins.d/nvidia-skills-sample.yml`](../plugins.d/nvidia-skills-sample.yml).
+[`sample-plugin/`](./sample-plugin/) is an Agent Plugins 1.0.0 scaffold with
+three placeholder skills, two hooks, four MCP server entries, and one subagent.
+Hooks and the subagent live in an illustrative client extension namespace.
+The sample includes build and validation instructions and stays out of the
+marketplace listings. Its source definition is
+[`plugins.d/sample-plugin.yml`](../plugins.d/sample-plugin.yml).
 
 ## Curated plugins
 

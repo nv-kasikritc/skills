@@ -438,6 +438,8 @@ def render_agent_plugin_json(spec: dict[str, Any]) -> dict[str, Any]:
             out[key] = spec[key]
     if "keywords" in spec:
         out["keywords"] = list(spec["keywords"])
+    if "extensions" in spec:
+        out["extensions"] = spec["extensions"]
     return out
 
 

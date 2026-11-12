@@ -1,0 +1,50 @@
+# Placeholder-only package demonstrating Agent Plugins 1.0.0.
+# Rebuild generated manifests and skills with .github/scripts/build-plugins.sh.
+name: sample-plugin
+version: "0.1.0"
+description: Placeholder plugin containing three skills, two hooks, four MCP server entries, and one subagent.
+
+display_name: sample-plugin
+short_description: Placeholder examples of agent primitives
+long_description: An Agent Plugins 1.0.0 scaffold with three placeholder skills, four placeholder MCP server configurations, and an example client extension containing two placeholder hooks and one placeholder subagent.
+category: Developer Tools
+
+author:
+  name: nv-kasikritc
+  url: https://github.com/nv-kasikritc
+homepage: https://github.com/nv-kasikritc/skills
+repository: https://github.com/nv-kasikritc/skills
+license: Apache-2.0 AND CC-BY-4.0
+
+keywords:
+  - sample
+  - placeholder
+  - agent-plugins
+
+capabilities: []
+default_prompts:
+  - "Demonstrate sample-skill-1."
+
+# Keep placeholders out of the production NVIDIA skills catalog.
+# These example source files are copied into the self-contained package.
+skill_files: copy
+include_skills:
+  - plugins.d/sample-plugin/skills/sample-skill-1/
+  - plugins.d/sample-plugin/skills/sample-skill-2/
+  - plugins.d/sample-plugin/skills/sample-skill-3/
+
+# Hooks and subagents are outside the portable 1.0.0 core. This namespace
+# illustrates where a client's extension data and files would belong.
+# Its keys are example metadata, not a standard hook or subagent schema.
+extensions:
+  com.example.client:
+    placeholder: true
+    enabled: false
+    hooks: ./com.example.client/hooks/hooks.json
+    subagents:
+      - ./com.example.client/agents/sample-subagent.md
+
+marketplace_enabled:
+  claude: false
+  codex: false
+  cursor: false

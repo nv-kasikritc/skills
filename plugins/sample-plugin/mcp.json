@@ -1,0 +1,21 @@
+{
+    "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+    "mcpServers": {
+        "sample-mcp-1": {
+            "type": "stdio",
+            "command": "sample-plugin-mcp-1-placeholder"
+        },
+        "sample-mcp-2": {
+            "type": "stdio",
+            "command": "sample-plugin-mcp-2-placeholder"
+        },
+        "sample-mcp-3": {
+            "type": "stdio",
+            "command": "sample-plugin-mcp-3-placeholder"
+        },
+        "sample-mcp-4": {
+            "type": "stdio",
+            "command": "sample-plugin-mcp-4-placeholder"
+        }
+    }
+}

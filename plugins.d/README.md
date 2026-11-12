@@ -29,6 +29,13 @@ only requires editing the `include_skills:` list and re-running:
 .github/scripts/build-plugins.sh
 ```
 
+The placeholder-only [`sample-plugin.yml`](./sample-plugin.yml) keeps its
+example skill source templates under `plugins.d/sample-plugin/skills/` so they
+do not enter the production NVIDIA skills catalog. It also demonstrates an
+optional `extensions` mapping, which is copied to the portable `plugin.json`.
+Client extension files and root `mcp.json` are hand-maintained in the sample
+package and preserved when its skills and manifests are regenerated.
+
 ## `skill_files:` — copy vs symlink
 
 Each plugin selects what kind of files end up under

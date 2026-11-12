@@ -1,8 +1,8 @@
 {
-    "name": "nvidia-skills-sample",
+    "name": "sample-plugin",
     "version": "0.1.0",
-    "description": "Sample Agent Plugins package that helps users discover the right NVIDIA skill for their workflow.",
-    "displayName": "NVIDIA Skills Sample",
+    "description": "Placeholder plugin containing three skills, two hooks, four MCP server entries, and one subagent.",
+    "displayName": "sample-plugin",
     "author": {
         "name": "nv-kasikritc",
         "url": "https://github.com/nv-kasikritc"
@@ -11,10 +11,9 @@
     "repository": "https://github.com/nv-kasikritc/skills",
     "license": "Apache-2.0 AND CC-BY-4.0",
     "keywords": [
-        "nvidia",
-        "agent-plugins",
         "sample",
-        "skill-discovery"
+        "placeholder",
+        "agent-plugins"
     ],
     "skills": [
         "./skills/"

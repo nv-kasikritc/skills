@@ -1,0 +1,18 @@
+{
+    "hooks": [
+        {
+            "name": "sample-hook-1",
+            "description": "Placeholder hook 1. Replace with a client-specific hook definition.",
+            "event": "sample-event-1",
+            "enabled": false,
+            "command": "sample-plugin-hook-1-placeholder"
+        },
+        {
+            "name": "sample-hook-2",
+            "description": "Placeholder hook 2. Replace with a client-specific hook definition.",
+            "event": "sample-event-2",
+            "enabled": false,
+            "command": "sample-plugin-hook-2-placeholder"
+        }
+    ]
+}

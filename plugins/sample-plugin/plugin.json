@@ -1,0 +1,28 @@
+{
+    "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+    "name": "sample-plugin",
+    "version": "0.1.0",
+    "description": "Placeholder plugin containing three skills, two hooks, four MCP server entries, and one subagent.",
+    "author": {
+        "name": "nv-kasikritc",
+        "url": "https://github.com/nv-kasikritc"
+    },
+    "homepage": "https://github.com/nv-kasikritc/skills",
+    "repository": "https://github.com/nv-kasikritc/skills",
+    "license": "Apache-2.0 AND CC-BY-4.0",
+    "keywords": [
+        "sample",
+        "placeholder",
+        "agent-plugins"
+    ],
+    "extensions": {
+        "com.example.client": {
+            "placeholder": true,
+            "enabled": false,
+            "hooks": "./com.example.client/hooks/hooks.json",
+            "subagents": [
+                "./com.example.client/agents/sample-subagent.md"
+            ]
+        }
+    }
+}

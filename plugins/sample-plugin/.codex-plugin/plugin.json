@@ -1,0 +1,30 @@
+{
+    "name": "sample-plugin",
+    "version": "0.1.0",
+    "description": "Placeholder plugin containing three skills, two hooks, four MCP server entries, and one subagent.",
+    "author": {
+        "name": "nv-kasikritc",
+        "url": "https://github.com/nv-kasikritc"
+    },
+    "homepage": "https://github.com/nv-kasikritc/skills",
+    "repository": "https://github.com/nv-kasikritc/skills",
+    "license": "Apache-2.0 AND CC-BY-4.0",
+    "keywords": [
+        "sample",
+        "placeholder",
+        "agent-plugins"
+    ],
+    "skills": "./skills/",
+    "interface": {
+        "displayName": "sample-plugin",
+        "shortDescription": "Placeholder examples of agent primitives",
+        "longDescription": "An Agent Plugins 1.0.0 scaffold with three placeholder skills, four placeholder MCP server configurations, and an example client extension containing two placeholder hooks and one placeholder subagent.",
+        "developerName": "nv-kasikritc",
+        "category": "Developer Tools",
+        "capabilities": [],
+        "brandColor": "#76b900",
+        "defaultPrompt": [
+            "Demonstrate sample-skill-1."
+        ]
+    }
+}
